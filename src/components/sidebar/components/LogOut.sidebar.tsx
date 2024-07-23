@@ -1,5 +1,5 @@
 import IconLogOut from "../../../assets/icons/IconLogOut";
-import ItemContainer from "./ItemContainer.header";
+import ItemContainer from "./ItemContainer.sidebar";
 
 export default function LogOut() {
   return (

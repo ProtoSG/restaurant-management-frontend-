@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import { Category } from '../adapters/category.adapter'
 import { getCategory } from '../services/cateogory.service'
+import { ItemCategory } from '../../../../../models/ItemCategory.model'
 
-export default function useCategories() {
-  const [categories, setCategories] = useState<Category[]>([])
+export default function useItemCategories() {
+  const [itemCategories, setItemCategories] = useState<ItemCategory[]>([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -13,8 +13,7 @@ export default function useCategories() {
         setLoading(true)
         setError(false)
         const data = await getCategory();
-        setCategories(data)
-        setLoading(false)
+        setItemCategories(data)
       } catch (error) {
         setError(true)
       } finally {
@@ -24,6 +23,6 @@ export default function useCategories() {
     fetchCategories()
   }, [])
 
-  return { categories, loading, error }
+  return { itemCategories, loading, error }
 }
 

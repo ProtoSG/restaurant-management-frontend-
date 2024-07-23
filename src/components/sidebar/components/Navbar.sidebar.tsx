@@ -1,8 +1,7 @@
 import IconChartPie from "../../../assets/icons/IconChartPie"
 import IconFish from "../../../assets/icons/IconFish"
 import IconHome from "../../../assets/icons/IconHome"
-import ItemContainer, { ItemContainerProps } from "./ItemContainer.header"
-
+import ItemContainer, { ItemContainerProps } from "./ItemContainer.sidebar"
 
 const links: Array<ItemContainerProps> = [
   {
@@ -26,6 +25,7 @@ export default function Navbar() {
       {
         links.map((link) => (
           <ItemContainer
+            key={link.link}
             icon={link.icon}
             link={link.link}
           />
@@ -34,4 +34,5 @@ export default function Navbar() {
     </nav>
   )
 }
+
 
