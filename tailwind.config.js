@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     colors: {
+      'white': "#fff",
       'bg': {
         100: "#252836",
         200: "#1F1D2B",

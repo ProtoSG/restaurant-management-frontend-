@@ -11,11 +11,11 @@ export default function ItemContainer({ icon, link, onClick }: ItemContainerProp
   const isSelected = location.pathname === `/${link}`
 
   return (
-    <div className={`py-3 px-2 rounded-xl ${isSelected ? " bg-bg-100" : "bg-bg-200"} relative`}>
+    <div className={`py-3 px-2 rounded-xl ${isSelected ? " bg-bg-100" : "bg-bg-200"}  relative`}>
       <Link
         onClick={onClick}
         to={`/${link}`}
-        className={`size-16  m-auto flex items-center justify-center rounded-xl transition-colors ${isSelected ? "bg-primary text-white" : "text-primary"}`}
+        className={`size-16  m-auto flex items-center justify-center rounded-xl hover:bg-primary hover:text-white transition-colors ${isSelected ? "bg-primary text-white" : "text-primary"}`}
       >
         {icon}
       </Link>
