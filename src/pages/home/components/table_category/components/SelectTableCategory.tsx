@@ -13,25 +13,14 @@ interface SelectTableCategoryProps {
   tableCategories: TableCategory[]
 }
 
-const tableCategoriesLocal = [
-  {
-    "id": 1,
-    "name": "tabl 1"
-  },
-  {
-    "id": 2,
-    "name": "tabl 2"
-  },
-
-]
 
 export default function SelectTableCategory({ tableCategories }: SelectTableCategoryProps) {
   const setId = useTableCategoryId(set => set.setId);
   const id = useTableCategoryId(set => set.id);
 
   useEffect(() => {
-    if (tableCategoriesLocal.length > 0) {
-      const defaultId = tableCategoriesLocal[0]?.id;
+    if (tableCategories.length > 0) {
+      const defaultId = tableCategories[0]?.id;
       setId(defaultId);
     }
   }, [tableCategories, setId]);
@@ -44,7 +33,7 @@ export default function SelectTableCategory({ tableCategories }: SelectTableCate
     }
   };
 
-  const options = tableCategoriesLocal.map(tableCategory => ({
+  const options = tableCategories.map(tableCategory => ({
     value: tableCategory.id,
     label: tableCategory.name,
   }));
