@@ -11,9 +11,9 @@ export default function TableCategoryContainer() {
   return (
     <section className="w-full mb-8">
       {
-        loading ? <LoadingTableCategory />
-          : error ? <ErrorTableCategory />
-            : <SelectTableCategory tableCategories={tableCategories} />
+        //       {/* {/* loading ? <LoadingTableCategory /> */ } */}
+        //     {/*   : error ? <ErrorTableCategory /> */}
+        <SelectTableCategory tableCategories={tableCategories} />
       }
     </section>
   );

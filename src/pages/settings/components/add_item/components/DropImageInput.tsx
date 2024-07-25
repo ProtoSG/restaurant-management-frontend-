@@ -2,11 +2,12 @@ import { useCallback, useState } from "react"
 import { useDropzone } from "react-dropzone"
 import IconPlus from "../../../../../assets/icons/IconPlus"
 
-export default function DropImageInput() {
+export default function DropImageInput({ setFile }: { setFile: React.Dispatch<React.SetStateAction<File | null>> }) {
   const [acceptedFilesState, setAcceptedFilesState] = useState<File[]>([])
 
   const onDrop = useCallback((acceptedFiles: File[]) => {
     setAcceptedFilesState(acceptedFiles)
+    setFile(acceptedFiles[0])
   }, [])
 
   const { getRootProps, getInputProps, isDragActive, acceptedFiles } = useDropzone({ onDrop })
