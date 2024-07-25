@@ -1,8 +1,6 @@
-interface IconLogOutProps {
-  className?: string
-}
+import { Icon } from "./type/TypeIcon";
 
-export default function IconLogOut({ className }: IconLogOutProps) {
+export default function IconLogOut({ className }: Icon) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

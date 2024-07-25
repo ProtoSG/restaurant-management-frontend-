@@ -1,6 +1,6 @@
 import IconChartPie from "../../../assets/icons/IconChartPie"
-import IconFish from "../../../assets/icons/IconFish"
 import IconHome from "../../../assets/icons/IconHome"
+import IconSettings from "../../../assets/icons/IconSettings"
 import ItemContainer, { ItemContainerProps } from "./ItemContainer.sidebar"
 
 const links: Array<ItemContainerProps> = [
@@ -13,8 +13,8 @@ const links: Array<ItemContainerProps> = [
     "link": "dashboard"
   },
   {
-    "icon": <IconFish />,
-    "link": "dishes",
+    "icon": <IconSettings />,
+    "link": "settings",
   }
 ]
 

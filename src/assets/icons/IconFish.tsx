@@ -1,8 +1,6 @@
-interface IconFishProps {
-  className?: string
-}
+import { Icon } from "./type/TypeIcon";
 
-export default function IconFish({ className }: IconFishProps) {
+export default function IconFish({ className }: Icon) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

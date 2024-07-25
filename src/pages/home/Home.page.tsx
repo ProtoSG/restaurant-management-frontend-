@@ -13,8 +13,8 @@ export default function Home() {
         <ItemCategoryContainer />
         <InventoryContainer />
       </div>
-      <aside className="bg-bg-200 h-screen overflow-x-hidden overflow-y-scroll relative rounded-2xl min-w-[396px] flex flex-col items-center ">
-        <section className="p-7 h-full">
+      <aside className="bg-bg-200 h-screen overflow-x-hidden overflow-y-scroll relative rounded-2xl min-w-[412px] flex flex-col items-center ">
+        <section className="p-7 h-full w-full">
           <TableCategoryContainer />
           <TableContainer />
         </section>

@@ -11,7 +11,9 @@ export default function ItemCategoryContainer() {
         {
           loading ? <LoadingItemCategory />
             : error ? <ErrorItemCategory />
-              : <ListItemCategory itemCategories={itemCategories} />
+              : itemCategories.length > 0
+                ? <ListItemCategory itemCategories={itemCategories} />
+                : <p className="text-center text-sm text-text">No hay categorías</p>
         }
       </ul>
     </nav>

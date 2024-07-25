@@ -7,6 +7,7 @@ export default {
   theme: {
     colors: {
       'white': "#fff",
+      'red': "#FF7CA3",
       'bg': {
         100: "#252836",
         200: "#1F1D2B",
@@ -14,7 +15,8 @@ export default {
       },
       "primary": "#EA7C69",
       "text": "#ABBBC2",
-      "stroke": "#393C49"
+      "stroke": "#393C49",
+      "transparent": "#00000000",
     },
     extend: {
     },

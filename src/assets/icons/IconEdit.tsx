@@ -1,6 +1,4 @@
-import { Icon } from "./type/TypeIcon";
-
-export default function IconChartPie({ className }: Icon) {
+export default function IconEdit() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -12,12 +10,11 @@ export default function IconChartPie({ className }: Icon) {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={className}
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M10 3.2a9 9 0 1 0 10.8 10.8a1 1 0 0 0 -1 -1h-6.8a2 2 0 0 1 -2 -2v-7a.9 .9 0 0 0 -1 -.8" />
-      <path d="M15 3.5a9 9 0 0 1 5.5 5.5h-4.5a1 1 0 0 1 -1 -1v-4.5" />
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M16 19h6" />
     </svg>
   )
 }
-
